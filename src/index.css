@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: monospace;
+    font-size:1.3rem;
+}
+.header{
+    @apply flex items-center justify-center sm:justify-start mb-[1.5em] bg-cyan-400 shadow-lg;
+}
+.header p{
+    @apply flex items-center text-5xl font-semibold p-[10px] pl-[33px] cursor-pointer;
+}
+.note-container{
+    @apply grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
+}
+.note{
+    @apply  mb-[10px] rounded-lg shadow-lg whitespace-pre-wrap p-[1rem] h-[300px] flex flex-col justify-between;
+}
+.note-footer{
+    @apply flex justify-between items-center;
+}
+
+.button-hover{
+    @apply hover:scale-125 hover:cursor-pointer;
+}
